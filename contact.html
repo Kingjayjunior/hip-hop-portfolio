@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <style>
+    body{ 
+  height: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/08/HD-Backgrounds-Black-1920x1080.jpg");
+  background-size: cover;
+  background-position: center;
+  }
+ 
+.navbar {
+background: rgba(0, 0, 0, 0.1);
+color: white;
+padding: 8px;
+text-align: center;
+}
+
+
+.navbar a {
+ color: black;
+ margin: 0 15px;
+ text-decoration: none;
+ font-size: 18px;
+ } 
+ 
+ .navbar a:hover{
+ text-decoration: underline;
+ }
+ 
+ .header {
+ background: #333;
+ color: white;
+ text-align: center;
+ padding: 12px;
+ }
+
+    /* Register Form */
+    .form-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+      margin: 30px auto;
+      flex-grow: 1;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #6a0dad;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #5500aa;
+    }
+
+    .success-message {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: popIn 1s ease-out;
+      z-index: 999;
+    }
+
+    .scary-image {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      animation: shake 0.5s ease-in-out infinite alternate;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2c2c2c;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1rem;
+    }
+	
+	h1,h2,p{
+font-family: "Times New Roman", serif;
+ color: yellow;
+  }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes popIn {
+      0% { opacity: 0; transform: translate(-50%, -60%); }
+      100% { opacity: 1; transform: translate(-50%, -50%); }
+    }
+
+    @keyframes shake {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(10deg); }
+      50% { transform: rotate(-10deg); }
+      75% { transform: rotate(5deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    /* About Us and Contact Us */
+    .about-us, .contact-us {
+      margin-top: 20px;
+      color: white;
+      font-size: 1.1rem;
+      text-align: left;
+    }
+	form-container { 
+ width: 100%;
+ max-width: 400px; 
+ margin: 20px auto;
+ padding: 20px;
+ background: #f4f4f4;
+ border-radius: 8px;
+ }
+ 
+ .header {
+ background: #333;
+ color: white;
+ text-align: center;
+ padding: 12px;
+ }
+ 
+ .form-container input,
+ .form-container button {
+ width: 100%;
+ padding: 10px;
+ margin: 10px 0;
+ border: 1px solid #ddd;
+ border-radius: 5px;
+ }
+ 
+ .form-container{
+  margin: 50px auto;
+  width: 300px;
+  padding: 40px;
+  background: rgba(100, 100, 100, 0.3);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  }
+  
+ .form-container button {
+ background: #28a745;
+ color: white;
+ border: none;
+ cursor: pointer;
+ }
+ 
+ .form-container button:hover{
+ background: #218838;
+ }
+ .main-content{
+ flex: 1;
+ }
+
+  </style>
+</head>
+<body>
+<header> 
+<img align="left" width="400" height="250" src="https://tse2.mm.bing.net/th/id/OIP.hsheFicP-Sxqdu9DLlU8vAHaJI?rs=1&pid=ImgDetMain">
+ <img align="right" width="400" height="250" src="https://www.themoviedb.org/t/p/w276_and_h350_face/3hmz48Vevx6Q3FwxBmNkNKPeLkx.jpg"><h1 align="center"> WHO WON..??</h1>
+ <br>
+ <br>
+ <br>
+ <br>
+ <div class="navbar">
+	 <a href="index.html">Home</a>
+	 <a href="project A.html">Project A</a>
+	 <a href="project B.html">Project B</a>
+	<a href="contact.html">Contact</a>
+	</div>
+<br>
+ <br>
+	<br>
+ <br>
+  <!-- Register Form -->
+  <div class="form-container">
+    <h2>Opinion Here</h2>
+    <form id="registerForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+      <input type="password" id="password" placeholder="Your Password" required />
+      <button type="submit">Register</button>
+    </form>
+
+    <div id="successMessage" class="success-message">
+      <img src="https://i.ytimg.com/vi/ap1O0UKqNZ8/maxresdefault.jpg" alt="Scary Image" class="scary-image" />
+	        <img src="https://i.ytimg.com/vi/-JN3SaDRsBU/maxresdefault.jpg" alt="Scary Image" class="scary-image" />
+      <img src="https://cdn.wallpapersafari.com/97/2/Y5DhFX.jpg" alt="Scary Image" class="scary-image" />
+      <img src="https://img.freepik.com/premium-photo/white-dove-flying-isolated-background-hd_812426-150236.jpg" alt="Scary Image" class="scary-image" />
+      <img src="https://thumbs.dreamstime.com/z/two-coffins-elevated-view-two-coffins-elevated-view-white-261443033.jpg" alt="Scary Image" class="scary-image" />
+      <img src="https://img.freepik.com/premium-photo/white-dove-flying-isolated-background-hd_812426-150236.jpg" alt="Scary Image" class="scary-image" />
+      <img src="https://pbs.twimg.com/media/DHoHeSxW0AEDCbI.jpg" alt="Scary Image" class="scary-image" />
+      <img src="https://pbs.twimg.com/media/DHoHeSxW0AEDCbI.jpg" alt="Scary Image" class="scary-image" />
+
+    </div>
+  </div>
+
+  <!-- About Us -->
+  <div class="about-us">
+    <h3>About Us</h3>
+    <p>
+      The rivalry between East Coast and West Coast rappers is one of the most famous in hip-hop history. The East Coast, home to legends like The Notorious B.I.G. and Jay-Z, shaped the gritty sound of rap in the '90s. On the other hand, the West Coast brought the laid-back, gangsta rap vibe through iconic artists like Tupac and Dr. Dre. This rivalry fueled some of the most significant moments in rap history.
+    </p>
+  </div>
+
+  <!-- Contact Us -->
+  <div class="contact-us">
+    <h3>Contact Us</h3>
+    <p>If you have any questions, feel free to reach out to us!</p>
+    <p>Email us at <a href="mailto:info@hiphoplegends.com">info@hiphoplegends.com</a></p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 East Coast vs West Coast Hip-Hop Legends. All rights reserved.</p>
+    <p>
+      <a href="#">Privacy Policy</a> | 
+      <a href="#">Terms of Service</a>
+    </p>
+  </footer>
+
+  <script>
+    const form = document.getElementById("registerForm");
+    const successMessage = document.getElementById("successMessage");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevents form from reloading the page
+
+      // Here you could add your form submission logic, e.g., sending data to a server
+
+      // Show the success message with the scary image
+      successMessage.style.display = "block";
+    });
+  </script>
+</body>
+</html>

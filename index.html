@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UFT-8">
+<meta name="viewport content="width=device-width, initial=1.0">
+<title> My portfolio </title>
+<link rel="stylesheet" href="style.css">
+
+ <style>
+   body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #4b0082, #1a1a1a);
+      color: white;
+      padding: 20px;
+      overflow-x: hidden;
+      position: relative;
+      transition: background 2s ease-in-out;
+	  background-image: url("https://e1.pxfuel.com/desktop-wallpaper/655/571/desktop-wallpaper-black-stars-iphone-star-dark-aesthetic.jpg");
+    }
+    header {
+  text-align: center;
+  padding: 40px 20px;
+  background: black; /* Changed to black */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  margin-bottom: 40px;
+  animation: fadeInDown 1s ease-out;
+}
+
+    header h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      color: #fff;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      animation: fadeInUp 1s ease-out;
+    }
+    .tab-button {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      cursor: pointer;
+      margin: 0 10px;
+      border-radius: 12px;
+      font-size: 1rem;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    .tab-button:hover {
+      background-color: #5500aa;
+      transform: translateY(-2px);
+    }
+    .tab-button.active {
+      background-color: #6a0dad;
+      box-shadow: 0 4px 15px rgba(106, 13, 173, 0.5);
+    }
+    .content {
+      display: none;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .content.active {
+      display: grid;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .card {
+      background-color: #2c2c2c;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+    }
+	
+	.navbar {
+background: rgba(0, 0, 0, 0.1);
+color: white;
+padding: 8px;
+text-align: center;
+}
+
+.navbar a {
+ color: yellow;
+ margin: 0 15px;
+ text-decoration: none;
+ font-size: 18px;
+ } 
+ 
+ .navbar a:hover{
+ text-decoration: underline;
+ }
+	
+    .card h2 {
+      margin-top: 0;
+      color: #fff;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .card p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+    .youtube-link {
+      color: #00ffff;
+      text-decoration: underline;
+      font-size: 0.95rem;
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+
+    .floating {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      animation: float 4s ease-in-out infinite;
+    }
+    .floating:nth-child(1) { top: 10%; left: 5%; animation-delay: 0s; }
+    .floating:nth-child(2) { top: 30%; left: 90%; animation-delay: 1s; }
+    .floating:nth-child(3) { top: 60%; left: 10%; animation-delay: 2s; }
+    .floating:nth-child(4) { top: 80%; left: 80%; animation-delay: 3s; }
+  
+  </style>
+</head>
+<body>
+  <div class="floating"></div>
+  <div class="floating"></div>
+  <div class="floating"></div>
+  <div class="floating"></div>
+
+  <header>
+    <h1>East Coast vs West Coast Hip-Hop Legends</h1>
+	<div class="navbar">
+	 <a href="index.html">Home</a>
+	 <a href="project A.html">Project A</a>
+	 <a href="project B.html">Project B</a>
+	<a href="contact.html">Contact</a>
+	</div>
+  </header>
+
+  <div class="tabs">
+    <button class="tab-button active" onclick="showTab('east', event)">East Coast</button>
+    <button class="tab-button" onclick="showTab('west', event)">West Coast</button>
+	<button class="tab-button" onclick="showTab('read', event)">Read Me</button>
+  </div>
+
+ <div id="east" class="content active">
+    <div class="card">
+      <h2>Diddy</h2>
+      <img src="https://hiphop-n-more.com/wp-content/uploads/2023/11/diddy-accused-of-sexual-assault-from-1991-1140x806.jpg" alt="Diddy">
+      <p>Entrepreneur and rapper from Harlem, influential in shaping East Coast sound.</p>
+    </div>
+    <div class="card">
+      <h2>The Notorious B.I.G.</h2>
+      <img src="https://i.scdn.co/image/1b4858fbd24046a81cace5ee18d19c868262b91f" alt="The Notorious B.I.G.">
+      <p>Brooklyn native, famous for 'Ready to Die'.</p>
+      <a class="youtube-link" href="https://www.youtube.com/watch?v=_JZom_gVfuw" target="_blank">Listen to "Juicy"</a>
+    </div>
+    <div class="card">
+      <h2>Jay-Z</h2>
+      <img src="https://www.billboard.com/wp-content/uploads/2020/12/jay-z-roc-nation-brunch-2020-billboard-1548-1607102538.jpg" alt="Jay-Z">
+      <p>From Marcy Projects to mogul status.</p>
+    </div>
+  </div>
+
+  <div id="west" class="content">
+    <div class="card">
+      <h2>Ice Cube</h2>
+      <img src="https://tse1.mm.bing.net/th/id/OIP.20oPk5we6FzqyhsrADQw8gHaHa?rs=1&pid=ImgDetMain" alt="Ice Cube">
+      <p>Ruthless lyricist and N.W.A member who defined gangsta rap.</p>
+    </div>
+	<div class="card">
+      <h2>Tupac Shakur</h2>
+      <img src="https://th.bing.com/th/id/R.477a1a1a0d4b84b14add6ddf65b6af3d?rik=apaW7VwIIx1Hog&riu=http%3a%2f%2fimages5.fanpop.com%2fimage%2fphotos%2f25700000%2fTupac-1024x768-tupac-shakur-25745548-1024-768.jpg&ehk=4FFIJH%2bq0psVn2vxrKHiIQUaCd87H%2fmsLT6WVjv0pfA%3d&risl=&pid=ImgRaw&r=0" alt="Tupac">
+      <p>Poetic voice of the West Coast, known for 'All Eyez on Me'.</p>
+      <a class="youtube-link" href="https://www.youtube.com/watch?v=nkJA6SYwa94" target="_blank">Watch "No More Pain"</a>
+    </div>
+    <div class="card">
+      <h2>Snoop Dogg</h2>
+      <img src="https://th.bing.com/th/id/R.cd7bb825c2caf8cd5c4fec2d1263d7cf?rik=QkaAC6xwiFzUQw&riu=http%3a%2f%2f2.bp.blogspot.com%2f-QBufXd-qkQ4%2fUBZXvK8cpUI%2fAAAAAAAACYM%2fScxf1OraXOg%2fs1600%2fsnoop_dogg1.jpg&ehk=e18vVPCpEOQoPdg59aFaTGx2FRuApUSu6GHvCG3%2b7z8%3d&risl=&pid=ImgRaw&r=0" alt="Snoop Dogg">
+      <p>Laid-back flow and iconic sound, key player in West Coast G-funk era.</p>
+    </div>
+  </div>
+<div id="read" class="content">
+    <div class="card">
+      <h2>Short description</h2>
+      <img src="https://www.pixelstalk.net/wp-content/uploads/2016/05/Images-Download-Black-Wallpapers-HD.jpg" alt="Ice Cube">
+      <p>This interactive webpage showcases the legendary figures of East Coast and West Coast hip-hop. Using tabs, it allows users to explore influential artists like Diddy, Biggie, and Jay-Z from the East Coast, and Ice Cube, Tupac, and Snoop Dogg from the West Coast. The design features smooth animations, a stylish dark theme with a starry background, and includes YouTube links for music highlights. The layout is clean and responsive, offering a modern portfolio-style presentation of hip-hop culture.
+
+</p>
+    </div>
+	<div class="card">
+      <h2>Technologies Used</h2>
+      <img src="https://wallpaperaccess.com/full/1777028.jpg" alt="Tupac">
+      <p>1. HTML (HyperText Markup Language)
+Purpose: The backbone of the webpage; it structures all the content like headings, buttons, images, and text.
+
+Example in your code: div, h1, img, button, etc.
+<br>
+
+2. CSS (Cascading Style Sheets)
+Purpose: Controls the styling and layout of the webpage, such as colors, fonts, spacing, and animations.
+
+Used for:
+
+Gradient backgrounds
+
+Card styles and hover effects
+
+Responsive grid layout
+
+Tab transitions and fade animations
+<br>
+3. JavaScript
+Purpose: Adds interactivity to the site, such as switching between East Coast and West Coast tabs.
+
+Used for:
+
+Tab button functionality
+
+Dynamically showing and hiding content
+<br>
+4. Embedded Media (YouTube Links)
+Purpose: Direct links to songs that give users an immersive experience.
+
+Used for: Letting users watch music videos directly from the artist cards.
+<br>
+5. External Image Hosting
+Purpose: Hosts artist images using URLs from the internet.
+
+Used for: Displaying artist portraits in the cards without storing images locally.
+
+</p>
+   
+    </div>
+    <div class="card">
+      <h2>Additional Notes</h2>
+      <img src="https://wallpaperaccess.com/full/2159.jpg" alt="Snoop Dogg">
+      <p>Design & Aesthetics
+Theme Consistency:
+My dark, starry background and purple gradient give off a strong hip-hop culture vibe — well matched with the East vs West Coast theme. 
+
+Animations:
+The floating circles and tab transitions add smoothness and visual engagement. The use of @keyframes for fadeInUp, fadeInDown, and float adds a premium feel.
+
+Visual Hierarchy:
+Clear structure: header > tabs > cards. 
+
+⚙️ Functionality
+Tab Switching:
+My JavaScript for switching between tabs is clean, simple and works well. 
+
+Navigation Bar:
+My navbar links are visible and easy to use. 
+
+</p>
+    </div>
+
+	<div align="center" class="card">
+  <h2>Live Demo</h2>
+  <p>Click below to view the live version of this project:</p>
+  <a href="https://your-live-demo-link.com" target="_blank" class="tab-button" style="text-decoration:none; display:inline-block; margin-top:10px;">
+    🌐 View Live Demo
+  </a>
+</div>
+
+	
+  <script>
+    function showTab(tabId, event) {
+      const contents = document.querySelectorAll('.content');
+      const buttons = document.querySelectorAll('.tab-button');
+
+      contents.forEach(content => {
+        content.classList.remove('active');
+      });
+
+      buttons.forEach(button => {
+        button.classList.remove('active');
+      });
+
+      const newContent = document.getElementById(tabId);
+      newContent.classList.add('active');
+
+      event.target.classList.add('active');
+    }
+
+    
+    let index = 0;
+
+   
+
+  </script>
+</body>
+</html>

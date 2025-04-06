@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UFT-8">
+<meta name="viewport content="width=device-width, initial=1.0">
+<title> My portfolio </title>
+<link rel="stylesheet" href="style.css">
+ <style>
+ 
+   body{ 
+  height: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-image: url("https://www.photos-public-domain.com/wp-content/uploads/2012/05/black-brick-wall-texture.jpg");
+  background-size: cover;
+  background-position: center;
+  }
+ 
+.navbar {
+background: rgba(0, 0, 0, 0.1);
+color: white;
+padding: 8px;
+text-align: center;
+}
+
+.navbar a {
+ color: yellow;
+ margin: 0 15px;
+ text-decoration: none;
+ font-size: 18px;
+ } 
+ 
+ .navbar a:hover{
+ text-decoration: underline;
+ }
+ 
+ .header {
+ background: #333;
+ color: white;
+ text-align: center;
+ padding: 12px;
+ }
+ 
+ .main-content{
+ flex: 1;
+ }
+ 
+ .footer{
+ background: #333;
+ color: white;
+ text-align: center;
+ padding: 15px;
+ bottom: 0;
+ width: 100%;
+ }
+ p{
+ color: white;
+ text-align: center;
+ font-size: 25px;
+ }
+h3{
+font-family: "Times New Roman", serif;
+ color: purple;
+  }
+h1,h2{
+font-family: "Times New Roman", serif;
+ color: yellow;
+  }
+  .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+         .gallery-item {
+            background: black;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 1s ease-in;
+        }
+        .gallery-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+		        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        .gallery-item img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05) rotate(1deg);
+        }
+        .desc {
+            margin-top: 15px;
+            font-size: 1em;
+            color: #666;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .gallery-item:hover .desc {
+            opacity: 1;
+            transform: translateY(0);
+        }
+		
+		@keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+           .moving-object {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(145deg, #ff6f91, #6a67ce);
+            position: fixed;
+            top: 100px;
+            left: 0;
+            border-radius: 40% 60% 50% 70% / 60% 40% 70% 50%;
+            animation: morph 4s infinite ease-in-out, colorShift 6s infinite alternate, horizontalBounce 3s infinite ease-in-out;
+            z-index: 9999;
+            box-shadow: 0 0 25px rgba(255, 111, 145, 0.6), 0 0 40px rgba(106, 103, 206, 0.3);
+        }
+
+        @keyframes morph {
+            0% { border-radius: 40% 60% 50% 70% / 60% 40% 70% 50%; }
+            50% { border-radius: 60% 40% 70% 50% / 40% 60% 50% 70%; }
+            100% { border-radius: 40% 60% 50% 70% / 60% 40% 70% 50%; }
+        }
+
+        @keyframes colorShift {
+            0% { background: linear-gradient(145deg, #ff6f91, #6a67ce); }
+            50% { background: linear-gradient(145deg, #00c9ff, #92fe9d); }
+            100% { background: linear-gradient(145deg, #fcb045, #fd1d1d); }
+        }
+
+        @keyframes horizontalBounce {
+            0% { left: 0; }
+            50% { left: calc(100% - 60px); }
+            100% { left: 0; }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+ </style>
+</head>
+
+<body>
+  <header><img align="left" width="200" height="150"src="https://cdn-radiotime-logos.tunein.com/s288921g.png">
+  <img align="right" width="200" height="150" src="https://cdn-radiotime-logos.tunein.com/s288921g.png"><h1 align="center"> East Coast</h1>
+ <br>
+  <div class="moving-object"></div>
+ <br>
+ <div class="navbar">
+	 <a href="index.html">Home</a>
+	 <a href="project A.html">Project A</a>
+	 <a href="project B.html">Project B</a>
+	<a href="contact.html">Contact</a>
+	</div>
+	 </header>
+    <h2 align="center"> Origin </h2>
+	<div class="project">
+	<p>East Coast rap originated in the 1970s in New York City, particularly in the Bronx, where DJs and MCs started experimenting with breakbeats and rhyming over instrumentals. Some key moments and figures in its early development include:
+
+DJ Kool Herc (1973) – Considered the "father of hip-hop," he pioneered breakbeat DJing at block parties.
+
+Grandmaster Flash & The Furious Five (Late 1970s) – Innovated turntablism and brought storytelling into rap.
+
+Run-D.M.C. (1980s) – Helped bring hip-hop to the mainstream with their fusion of rap and rock.
+
+The Notorious B.I.G., Nas, Wu-Tang Clan (1990s) – Defined the golden era of East Coast rap with lyricism, storytelling, and gritty beats.
+
+East Coast hip-hop is known for its emphasis on lyricism, complex wordplay, and boom-bap production style. It has evolved over the decades, influencing modern rap worldwide.
+</p>
+	</div>
+	
+	<div class="project">
+	<h1 align="center"> Famous East Coast Members Include: </h1>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2 align="center"> ...Shawn Corey Carter = JAY Z... </h2>
+	<div class="gallery">
+        <div class="gallery-item">
+            <img src="images/album.jpg" alt="Image 1">
+            <p class="desc">Jay Z's classic well known albums</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/drk.jpg" alt="Image 2">
+            <p class="desc">The Black album from Jay Z</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/lif.jpg" alt="Image 3">
+            <p class="desc">Jay Z Vol 2 Hard Knock Life</p>
+        </div>
+		<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+		<h2 align="left"> ...Sean John Combs = DIDDY...</h2>
+	<div class="gallery">
+        <div class="gallery-item">
+            <img src="images/glass.jpg" alt="Image 1">
+            <p class="desc">Photograph taken after the release of "The Love Album"</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/eye.jpg" alt="Image 2">
+            <p class="desc">Photograph of Puff diddy</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/hr.jpg" alt="Image 3">
+            <p class="desc">Iconic symbol of Hip-Hop culture</p>
+        </div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+		<h2 align="left">...THE N.O.T.O.R.I.O.U.S BIG...</h2>
+	<div class="gallery">
+        <div class="gallery-item">
+            <img src="images/chain.jpg" alt="Image 1">
+            <p class="desc">Black photograph of the notorious B.I.G</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/brown.jpg" alt="Image 2">
+            <p class="desc">The notorious B.I.G in style</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/mvie.jpg" alt="Image 3">
+            <p class="desc">A photograph of a movie in memory of Mr notorious himself the late Biggie smalls </p>
+        </div>
+		<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="footer">
+		 &copy;WEST C __VS__ EAST C
+		 </div>
+    </div>
+	</body>
+	</html>

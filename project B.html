@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UFT-8">
+<meta name="viewport content="width=device-width, initial=1.0">
+<title> My portfolio </title>
+<link rel="stylesheet" href="style.css">
+ <style>
+  body{ 
+  height: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-image: url("https://www.photos-public-domain.com/wp-content/uploads/2012/05/black-brick-wall-texture.jpg");
+  background-size: cover;
+  background-position: center;
+  }
+ 
+.navbar {
+background: rgba(0, 0, 0, 0.1);
+color: white;
+padding: 8px;
+text-align: center;
+}
+
+.navbar a {
+ color: yellow;
+ margin: 0 15px;
+ text-decoration: none;
+ font-size: 18px;
+ } 
+ 
+ .navbar a:hover{
+ text-decoration: underline;
+ }
+ 
+ .header {
+ background: #333;
+ color: white;
+ text-align: center;
+ padding: 12px;
+ }
+ 
+ .main-content{
+ flex: 1;
+ }
+ 
+ .footer{
+ background: #333;
+ color: white;
+ text-align: center;
+ padding: 15px;
+ bottom: 0;
+ width: 100%;
+ }
+ p{
+ color: white;
+ text-align: center;
+ font-size: 25px;
+ }
+h3{
+font-family: "Times New Roman", serif;
+ color: purple;
+  }
+h1,h2{
+font-family: "Times New Roman", serif;
+ color: yellow;
+  }
+  .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .gallery-item {
+            background: black;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            text-align: center;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+		        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        .gallery-item img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.03);
+        }
+        .desc {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #555;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+        .gallery-item:hover .desc {
+            opacity: 1;
+            transform: translateY(0);
+        }
+          
+  
+ </style>
+</head>
+
+<body>
+  <header><img align="left" width="200" height="150"src="images/wst.jpg" alt="west coast">
+  <img align="right" width="200" height="150" src="images/wst.jpg" alt="west coast"><h1 align="center"> &nbsp;&nbsp;West Coast</h1>
+ <br>
+ <br>
+ <div class="navbar">
+	 <a href="index.html">Home</a>
+	 <a href="project A.html">Project A</a>
+	 <a href="project B.html">Project B</a>
+	<a href="contact.html">Contact</a>
+	</div>
+	 </header>
+    <h2 align="center"> Origin </h2>
+	<div class="project">
+	<p>West Coast rap originated in the late 1970s and early 1980s, primarily in Los Angeles, California. While hip-hop started on the East Coast, West Coast artists developed their own distinct sound, influenced by funk, gang culture, and social issues.
+
+Origins & Key Figures:
+Ice-T (1980s) – One of the first West Coast rappers to gain recognition, pioneering gangsta rap with songs like 6 in the Mornin’.
+
+N.W.A (Late 1980s) – With Straight Outta Compton (1988), they brought gangsta rap to the mainstream, addressing police brutality and life in South Central L.A.
+
+Dr. Dre & G-Funk (1990s) – Dr. Dre’s The Chronic (1992) popularized G-Funk, a smoother, funk-inspired rap style.
+
+Tupac Shakur (1990s) – Became one of the most influential rappers with deeply personal and political lyrics.
+
+Snoop Dogg, Ice Cube, E-40 – Expanded West Coast rap’s influence with unique flows and storytelling.
+
+West Coast rap is known for its laid-back yet aggressive style, funky beats, and themes of street life, social struggle, and partying.
+</p>
+	</div>
+	
+	<div class="project">
+	<h1 align="center"> Famous West Coast Members Include: </h1>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2 align="center"> Calvin cordozar = Snoop Dogg</h2>
+	<div class="gallery">
+        <div class="gallery-item">
+            <img src="images/cal.jpg" alt="Image 1">
+            <p class="desc">Califonia Times is one of Snoop Dogg's best albums</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/bug.jpg" alt="Image 2">
+            <p class="desc">Photograph of Snoop Dogg</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/hit.jpg" alt="Image 3">
+            <p class="desc">This is a reflection of how snoop dogg is not only well known but makes incredible music</p>
+        </div>
+		<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+		<h2 align="left"> O'shea Jackson = Ice cube</h2>
+	<div class="gallery">
+        <div class="gallery-item">
+            <img src="images/vvv.jpg" alt="Image 1">
+            <p class="desc">Photograph of the famous Ice Cube</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/sin.jpg" alt="Image 2">
+            <p class="desc">Photograph of Ice Cube taken during an interview</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/beard.jpg" alt="Image 3">
+            <p class="desc">Iconic artist and actor Ice Cube</p>
+        </div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+		<h2 align="left"> Tupac Amaru Shakur = 2 PAC</h2>
+	<div class="gallery">
+        <div class="gallery-item">
+            <img src="images/iii.jpg" alt="Image 1">
+            <p class="desc">Photograph of Tupac Shakur</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/ben.jpg" alt="Image 2">
+            <p class="desc">Black and white photograph Tupac shakur</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/sss.jpg" alt="Image 3">
+            <p class="desc">One of Tupac's best listened albums</p>
+        </div>
+		<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="footer">
+		 &copy;WEST C __VS__ EAST C
+		 </div>
+    </div>
+	</body>
+	</html>
